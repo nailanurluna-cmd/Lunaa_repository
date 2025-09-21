@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cara Menginstal Visual Studio Code di Linux Mint
 
 Berikut adalah langkah-langkah untuk menginstal VS Code di Terminal:
@@ -40,3 +41,4 @@ Berikut adalah langkah-langkah untuk menginstal VS Code di Terminal:
     
 6.  **Verifikasi Instalasi**
     Setelah instalasi selesai, kamu bisa membuka VS Code dengan mengetik perintah `code` di Terminal, atau mencarinya di menu aplikasi.
+    
