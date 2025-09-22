@@ -1,7 +1,7 @@
 # Cara Instal MongoDB
 
 ### 1. Buka terminal
-Jalankan perinta ini untuk menginstal kunci publik MongoDB: 
+Jalankan perintah ini untuk menginstal kunci publik MongoDB: 
 ```bash
 wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | sudo apt-key add - 
 ``` 
@@ -22,7 +22,7 @@ sudo apt update
 
 
 ### 4. Install MOngoDB
-Jalankan pperintah ini: 
+Jalankan perintah ini: 
 ```bash
 sudo apt install mongodb-org
 ```
@@ -43,7 +43,7 @@ Jalankan perintah ini:
 ```bash
 sudo systemctl status mongod
 ```
-Jika MongoDB berhasil terinstal, akan muncul tulisan **active(running)**.
+Jika MongoDB berhasil terinstal, akan muncul tulisan active(running).
 Untuk keluar dari tampilan status, klik **:q** lalu enter
 
 
