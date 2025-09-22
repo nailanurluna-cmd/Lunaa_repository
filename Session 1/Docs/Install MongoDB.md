@@ -1,56 +1,54 @@
-# Cara Instalasi MongoDB di Debian/Ubuntu
+# Cara Instal MongoDB
 
-Berikut adalah langkah-langkah untuk menginstal MongoDB:
+### 1. Buka terminal
+Jalankan perinta ini untuk menginstal kunci publik MongoDB: 
+```bash
+wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | sudo apt-key add - 
+``` 
 
-### 1.  **Buka Terminal**
-Jalankan perintah ini untuk menginstal kunci publik MongoDB.
-   
-    ```bash
-    wget -qO - [https://www.mongodb.org/static/pgp/server-6.0.asc](https://www.mongodb.org/static/pgp/server-6.0.asc) | sudo apt-key add -
-    ```
 
-### 2.  **Buat File Daftar Repositori**
-Perintah ini akan membuat file yang memungkinkan sistemmu menemukan paket MongoDB.
-    
-    ```bash
-    echo "deb [ arch=amd64,arm64 ] [https://repo.mongodb.org/apt/ubuntu](https://repo.mongodb.org/apt/ubuntu) focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-    ```
+### 2. Buka File daftar repository
+Jalankan perintah ini: 
+```bash
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+```
 
-### 3.  **Perbarui Daftar Paket**
-Jalankan perintah ini.
-    ```bash
-    sudo apt update
-    ```
 
-### 4.  **Instal MongoDB**
-Sekarang, jalankan perintah ini untuk menginstal paket server MongoDB.
-    
-    ```bash
-    sudo apt install mongodb-org
-    ```
-    Jika diminta konfirmasi, ketik `y` lalu tekan Enter.
-    
-### 5.  **Mulai Layanan MongoDB**
-Mulai layanan MongoDB dengan perintah ini.
-    
-    ```bash
-    sudo systemctl start mongod
-    ```
+### 3. Perbarui daftar paket
+Lanjutkan dengan kode ini: 
+```bash
+sudo apt update
+```
 
-    ```bash 
-    sudo systemctl enable mongod 
-    ```
 
-### 6.  **Cek Status MongoDB**
-Untuk memastikan instalasi berhasil, cek statusnya:
-    
-    ```bash
-    sudo systemctl status mongod
-    ```
-    Jika muncul tulisan `active (running)`, berarti server sudah berjalan. Tekan `q` untuk keluar dari tampilan status.
+### 4. Install MOngoDB
+Jalankan pperintah ini: 
+```bash
+sudo apt install mongodb-org
+```
 
-### 7. **Masuk ke Shell MongoDB**
-Jalankan perintah ini 
-    ```bash 
-    mongosh
-    ```
+### 5. Mulai Layanan
+Jalankan perintah ini:
+```bash
+sudo systemctl start mongod
+```
+```bash
+sudo systemctl enable mongod
+```
+Tempel keduanya di **Terminal** dengan **Ctrl+Shift+V**
+
+
+### 6. Cek Status
+Jalankan perintah ini: 
+```bash
+sudo systemctl status mongod
+```
+Jika MongoDB berhasil terinstal, akan muncul tulisan **active(running)**.
+Untuk keluar dari tampilan status, klik **:q** lalu enter
+
+
+### 7. Masuk ke Shell MongoDB
+Jalankan perintah ini: 
+```bash
+mongosh
+```
