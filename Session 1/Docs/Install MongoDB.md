@@ -4,21 +4,18 @@ Berikut adalah langkah-langkah untuk menginstal MongoDB:
 
 ### 1.  **Buka Terminal**
     Jalankan perintah ini untuk menginstal kunci publik MongoDB.
-    
     ```bash
     wget -qO - [https://www.mongodb.org/static/pgp/server-6.0.asc](https://www.mongodb.org/static/pgp/server-6.0.asc) | sudo apt-key add -
     ```
 
 ### 2.  **Buat File Daftar Repositori**
     Perintah ini akan membuat file yang memungkinkan sistemmu menemukan paket MongoDB.
-    
     ```bash
     echo "deb [ arch=amd64,arm64 ] [https://repo.mongodb.org/apt/ubuntu](https://repo.mongodb.org/apt/ubuntu) focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
     ```
 
 ### 3.  **Perbarui Daftar Paket**
     Jalankan perintah ini.
-    
     ```bash
     sudo apt update
     ```
@@ -37,6 +34,7 @@ Berikut adalah langkah-langkah untuk menginstal MongoDB:
     ```bash
     sudo systemctl start mongod
     ```
+    
     ```bash 
     sudo systemctl enable mongod 
     ```
