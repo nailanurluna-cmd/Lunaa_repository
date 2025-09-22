@@ -3,25 +3,25 @@
 Berikut adalah langkah-langkah untuk menginstal MongoDB:
 
 ### 1.  **Buka Terminal**
-    Jalankan perintah ini untuk menginstal kunci publik MongoDB.
+Jalankan perintah ini untuk menginstal kunci publik MongoDB.
     ```bash
     wget -qO - [https://www.mongodb.org/static/pgp/server-6.0.asc](https://www.mongodb.org/static/pgp/server-6.0.asc) | sudo apt-key add -
     ```
 
 ### 2.  **Buat File Daftar Repositori**
-    Perintah ini akan membuat file yang memungkinkan sistemmu menemukan paket MongoDB.
+Perintah ini akan membuat file yang memungkinkan sistemmu menemukan paket MongoDB.
     ```bash
     echo "deb [ arch=amd64,arm64 ] [https://repo.mongodb.org/apt/ubuntu](https://repo.mongodb.org/apt/ubuntu) focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
     ```
 
 ### 3.  **Perbarui Daftar Paket**
-    Jalankan perintah ini.
+Jalankan perintah ini.
     ```bash
     sudo apt update
     ```
 
 ### 4.  **Instal MongoDB**
-    Sekarang, jalankan perintah ini untuk menginstal paket server MongoDB.
+Sekarang, jalankan perintah ini untuk menginstal paket server MongoDB.
     
     ```bash
     sudo apt install mongodb-org
@@ -29,18 +29,18 @@ Berikut adalah langkah-langkah untuk menginstal MongoDB:
     Jika diminta konfirmasi, ketik `y` lalu tekan Enter.
     
 ### 5.  **Mulai Layanan MongoDB**
-    Mulai layanan MongoDB dengan perintah ini.
+Mulai layanan MongoDB dengan perintah ini.
     
     ```bash
     sudo systemctl start mongod
     ```
-    
+
     ```bash 
     sudo systemctl enable mongod 
     ```
 
 ### 6.  **Cek Status MongoDB**
-    Untuk memastikan instalasi berhasil, cek statusnya:
+Untuk memastikan instalasi berhasil, cek statusnya:
     
     ```bash
     sudo systemctl status mongod
@@ -48,7 +48,7 @@ Berikut adalah langkah-langkah untuk menginstal MongoDB:
     Jika muncul tulisan `active (running)`, berarti server sudah berjalan. Tekan `q` untuk keluar dari tampilan status.
 
 ### 7. **Masuk ke Shell MongoDB**
-    Jalankan perintah ini 
+Jalankan perintah ini 
     ```bash 
     mongosh
     ```
