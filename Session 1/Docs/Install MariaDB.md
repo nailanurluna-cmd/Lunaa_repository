@@ -2,14 +2,7 @@
 
 Berikut adalah langkah-langkah untuk menginstal MariaDB di Terminal:
 
-1.  **Perbarui Paket Sistem**
-    Jalankan perintah ini untuk memperbarui daftar paket sistemmu:
-    
-    ```bash
-    sudo apt update
-    ```
-    
-2.  **Instal MariaDB**
+### 1.  **Instal MariaDB Server**
     Gunakan perintah ini untuk menginstal server dan client MariaDB:
     
     ```bash
@@ -17,7 +10,7 @@ Berikut adalah langkah-langkah untuk menginstal MariaDB di Terminal:
     ```
     Jika diminta konfirmasi, ketik `y` lalu tekan Enter.
     
-3.  **Amankan Instalasi**
+### 2.  **Amankan Instalasi**
     Jalankan perintah ini untuk mengamankan server:
     
     ```bash
@@ -25,7 +18,7 @@ Berikut adalah langkah-langkah untuk menginstal MariaDB di Terminal:
     ```
     Ikuti instruksi yang muncul di Terminal. Jika ini instalasi baru, biasanya kamu bisa langsung menekan Enter untuk password root, lalu ketik `y` untuk semua pertanyaan berikutnya.
 
-4.  **Cek Status MariaDB**
+### 3.  **Cek Status MariaDB**
     Untuk memastikan instalasi berhasil, cek status server dengan perintah ini:
     
     ```bash
